@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+    <style>
+      p {
+        text-align: left;
+        font-size: 36px;
+      }
+      section.present {
+        top: 150px;
+      }
+    </style>
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>TC39 committee</h1>
+					<p style="text-align: center;">Prepared by Maria Goenko</p>
+				</section>
+				<section>
+					<h2>
+					  What is the TC39 committee?
+          </h2>
+          <p>
+            TC39 means Technical Committee number 39. It’s part of ECMA (ЭКМА), the institution which standardizes the JavaScript language under the “ECMAScript” specification.
+          </p>
+          <p>
+            Ecma International's TC39 is a group of JavaScript developers, implementers, academics, and more, collaborating with the community to maintain and evolve the definition of JavaScript. 
+          </p>
+        </section>
+        <section>
+          <h2>
+            Members of committee
+          </h2>
+          <img src="assets/images/committee-members.png" alt="Members of committee">
+        </section>
+        <section>
+          <h2>
+            Feature development process (stages)
+          </h2>
+          <ol start="0">
+            <li>
+              Strawperson
+            </li>
+            <li>
+              Proposal
+            </li>
+            <li>
+              Draft
+            </li>
+            <li>
+              Candidate
+            </li>
+            <li>
+              Finished
+            </li>
+          </ol>
+        </section>
+        <section>
+          <h3>
+            Stage 0. Strawperson
+          </h3>
+          <p>
+            <b>Purpose:</b> allow input into the specification.
+          </p>
+          <p>
+            No acceptance criteria.
+          </p>
+        </section>
+        <section>
+          <h3>
+            Stage 1. Proposal
+          </h3>
+          <p>
+            <b>Purpose:</b> make the case for the addition, describe the shape of a solution, identify potential challenges
+          </p>
+          <p>
+            <b>Entrance Criteria:</b> problem + general shape of a solution, examples of usage, high-level API, discussion of key algorithms
+          </p>
+          <p>
+            <b>Acceptance Signifies:</b> the committee expects to devote time to examining the problem space, solutions and cross-cutting concerns
+          </p>
+          <p>
+            <b>Post-Acceptance Changes Expected: </b> Major
+          </p>
+        </section>
+        <section>
+          <h3>
+            Stage 2. Draft
+          </h3>
+          <p>
+            <b>Purpose: </b>precisely describe the syntax and semantics using formal spec language
+          <p>
+            <b>Entrance Criteria: </b>above + initial spec text
+          </p>
+          <p>
+            <b>Acceptance Signifies: </b>the committee expects the feature to be developed and eventually included in the standard
+          </p>
+          <p>
+            <b>Spec Quality: </b>all major semantics, syntax and API are covered, but TODOs, placeholders and editorial issues are expected
+          </p>
+          <p>
+            <b>Post-Acceptance Changes Expected: </b> Incremental
+          </p>
+          
+            <span data-markdown>
+              <b>Example:</b> `Map.prototype.upsert`
+            </span>
+          
+        </section>
+        <section>
+          <h3>
+            Stage 3. Candidate
+          </h3>
+          <p>
+            <b>Purpose: </b>indicate that further refinement will require feedback from implementations and users
+          <p>
+            <b>Entrance Criteria: </b>above + complete spec text, designated reviewers and all ECMAScript editors have signed off on the current spec text
+          </p>
+          <p>
+            <b>Acceptance Signifies: </b>the solution is complete and no further work is possible without implementation experience, significant usage and external feedback
+          </p>
+          <p>
+            <b>Spec Quality: </b>all semantics, syntax and API description are completed
+          </p>
+          <span data-markdown>
+            <b>Example:</b> `Promise.any`
+          </span>
+        </section>
+        <section>
+          <h3>
+            Stage 4. Finished
+          </h3>
+          <p>
+            <b>Purpose: </b>indicate that the addition is ready for inclusion in the formal ECMAScript standard
+          <p>
+            <b>Entrance Criteria: </b>above + written tests (Test262 suit), two compatible implementations passing tests, 
+            shipping implementations (two independent VMs), a pull request to tc39/ecma262 with spec text, 
+            all ECMAScript editors have signed off on the pull request
+          </p>
+          <p>
+            <b>Acceptance Signifies: </b>the addition will be included in the soonest practical standard revision
+          </p>
+          <p>
+            <b>Spec Quality: </b>all changes as a result of implementation experience are integrated
+          </p>
+        </section>
+        <section>
+          <h2>
+            Examples of features from the 4th step
+          </h2>
+          <ul>
+            <li>
+              <section data-markdown>
+                `Array.prototype.includes`
+              </section>
+            </li>
+            <li>
+              <section data-markdown>
+                `Object.values`
+              </section>
+            </li>
+            <li>
+              Async functions
+            </li>
+            <li>
+              <section data-markdown>
+                `Promise.prototype.finally`
+              </section>
+            </li>
+          </ul>
+          </section>
+          <section>
+            <h2>
+              Thank you for your attention!
+            </h2>
+          </section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
